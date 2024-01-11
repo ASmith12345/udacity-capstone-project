@@ -23,4 +23,5 @@ Before modelling the data, I mapped the numerical values to the true categorical
 In optimised-columns-ml-analysis, i created dummy variables in order to manage the categorical columns. This ensures that only numbers are being fed into the models.
 
 Categorical values - https://www.mdpi.com/2306-5729/7/11/146 
+
 Dataset - https://www.kaggle.com/datasets/thedevastator/higher-education-predictors-of-student-retention/data
