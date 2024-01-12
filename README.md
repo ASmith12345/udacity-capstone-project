@@ -20,6 +20,8 @@ In order to decide which metrics to use, I performed a correlation analysis of c
 
 Before modelling the data, I mapped the numerical values to the true categorical values. These were found in the paper “Predicting Student Dropout and Academic Success”. The dataset included one column incorrectly named which was altered. Where columns with categorical values which were only 1 and 0, they were interpreted to be boolean e.g. Debtor is is_debtor, Gender is is_male. I removed enrolled students as we are investigating what the outcome of the student’s university experience is. An enrolled student could become a graduate or dropout so it was important to remove these as it could reduce the accuracy of the model. The dataset included no nulls and required no cleaning.
 
+The reason for choosing f1-score is it's the most comprehensive of the available scores. e.g. Support Vector Machine has a large enough difference betwen precision and recall 0.87 and 0.77 for dropout that it can be both should be considered and f1 is most appropriate. In addition, my initial decision was to use the accuracy score. By using the f1-score, it demonstarated that using all three targets was a bad idea and vastly improved the model.
+
 In optimised-columns-ml-analysis, i created dummy variables in order to manage the categorical columns. This ensures that only numbers are being fed into the models.
 
 Medium article can be found here: https://medium.com/@alex.smith_69782/how-to-identify-which-university-students-are-at-risk-of-dropping-out-552be62a5796 
